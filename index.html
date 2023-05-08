@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td{
+            text-align: left;
+            padding-top: 20px;
+        }
+        input{
+            float: right;
+        }
+        img{
+            float: right;
+        }
+        footer{
+            left: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="header"><h1>Devera Store</h1></div>
+    <div class="nav">
+        <span style="padding: 10px;"><a href="*">Hotest</a></span>
+        <span style="padding: 10px;"><a href="*">Best Seller</a></span>
+        <span style="padding: 10px;"><a href="*">Trending</a></span>
+        <span style="padding: 10px;"><a href="*">Sport</a></span>
+        <span style="padding: 10px;"><a href="*">Music</a></span>
+    </div>
+    <div class="product">
+        <div class="title" style="margin: 20px;"><h1>Add Product</h1></div>
+            <form action="" style="padding: 20px;">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="product name">Product Name</label><input display="block" type="text" placeholder="name">
+                        </td>
+                        <td>
+                            <label for="catagory" style="">Catagory</label>
+                            <select name="catagory" id="" placeholder="Select" style="width: 100px;">
+                                <option value="0">Select</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                             </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for=" price">Price</label>
+                            <input type="number" placeholder="12">
+                        </td>
+                        <td>
+                            <input type="checkbox" id="" name="checkbox" value="Free ship" style="padding: 20px;float: left;"> 
+                            <label for="checkbox"> Free ship</label>
+                        </td>
+                    </tr>
+                    <tr><td><label for="des">Description</label><input type="text" placeholder="Desc" style="width: 170px; height: 100px;"></td></tr>
+                    <tr><td><label for="img">Image</label><img src="/img.jpg" alt="" style="width: 100px; height: 100px;"></td></tr>
+                    <tr>
+                        <td>
+                            <input type="radio" id="" name="btn" value="China" style="float: left;"><label for="China">China</label><br>
+                            <input type="radio" id="" name="btn" value="Vietnam" style="float: left;"><label for="Vietnam">Vietnam</label>
+                        </td>
+                        <td>
+                            <input type="button" onclick="alert('Success')" value="Create" style="float: left;">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+    </div>
+    <footer>
+        Devera Store@2023
+    </footer>
+</body>
+</html>
