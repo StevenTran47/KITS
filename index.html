@@ -17,7 +17,10 @@
             float: right;
         }
         footer{
-            left: auto;
+            position: absolute;
+            bottom: 0;
+            left: 900px;
+            text-align: center;
         }
     </style>
 </head>
@@ -33,11 +36,12 @@
     <div class="product">
         <div class="title" style="margin: 20px;"><h1>Add Product</h1></div>
             <form action="" style="padding: 20px;">
-                <table>
+                <table style="width: 700px;">
                     <tr>
                         <td>
                             <label for="product name">Product Name</label><input display="block" type="text" placeholder="name">
                         </td>
+                        <td style="width: 200px;"></td>
                         <td>
                             <label for="catagory" style="">Catagory</label>
                             <select name="catagory" id="" placeholder="Select" style="width: 100px;">
@@ -53,6 +57,7 @@
                             <label for=" price">Price</label>
                             <input type="number" placeholder="12">
                         </td>
+                        <td></td>
                         <td>
                             <input type="checkbox" id="" name="checkbox" value="Free ship" style="padding: 20px;float: left;"> 
                             <label for="checkbox"> Free ship</label>
@@ -65,6 +70,7 @@
                             <input type="radio" id="" name="btn" value="China" style="float: left;"><label for="China">China</label><br>
                             <input type="radio" id="" name="btn" value="Vietnam" style="float: left;"><label for="Vietnam">Vietnam</label>
                         </td>
+                        <td></td>
                         <td>
                             <input type="button" onclick="alert('Success')" value="Create" style="float: left;">
                         </td>
