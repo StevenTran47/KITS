@@ -1,0 +1,74 @@
+body{
+    margin: 0px;
+}
+.content{
+    position: relative;
+    width: 1728px;
+    height: 1117px;
+
+    background: #FFFFFF;
+}
+.nav{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 120px;
+    height: 955px;
+    left: 0px;
+    top: 0px;
+    background: #FFC297;
+}
+.nav .icon:first-child{
+    margin: 25px;
+    padding-left: 0px;
+}
+.nav .icon{
+    margin: 30px;
+    padding-left: 8px;
+}
+.nav .Ellipse{
+    position: absolute;
+    top: 800px;
+    left: 15px;
+}
+.nav .icon-setting{
+    position: absolute;
+    top: 820px;
+    left: 35px;
+}
+#side-bar{
+    position: absolute;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start; */
+    width: 200px;
+    height: 955px;
+    top: 0px;
+    left: 120px;
+    background: rgb(212, 211, 211);
+}
+#nav-bar{
+    display: block;
+    list-style: none;
+    text-decoration-line: none;
+}
+#nav-bar li {
+    position: relative;
+}
+#nav-bar > li > a{
+    color: black;
+}
+#nav-bar li a{
+    line-height: 50px;
+    padding: 0 24px;
+    display: block;
+}
+.line{
+    position: absolute;
+    width: 1px;
+    height: 945px;
+    top: 0px;
+    left: 320px;
+    background-color: black;
+}
