@@ -1,0 +1,58 @@
+.nav{
+    width: 100px;
+    height: 100px;
+}
+.nav .cate1 {
+    position: absolute;
+    left: 400px;
+}
+.nav .cate2 {
+    position: absolute;
+    left: 600px;
+}
+.nav .cate3 {
+    position: absolute;
+    left: 800px;
+}
+.primary{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(230, 226, 226);
+}
+.primary .title {
+    padding-top: 115px;
+    text-align: center;
+}
+h3{
+    color: grey;
+}
+.search{
+    width: 100%;
+    height: 75px;
+    position: absolute;
+    top: 410px;   
+}
+.search .sub {
+    padding-left: 140px;
+}
+.search .search-nav{
+    position: relative;
+    float: right;
+    padding-right: 200px;
+    top: -50px;
+    width: 100px;
+}
+.search .search-btn{
+    position: relative;
+    float: right;
+    padding-right: 100px;
+    top: -50px;
+    width: 115px;
+}
+hr{
+    color: aqua;
+    position: relative;
+    top: 380px;
+    width: 100%;
+}
