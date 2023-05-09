@@ -1,18 +1,20 @@
 .nav{
-    width: 100px;
+    width: 100%;
     height: 100px;
+    display: flex;
+    justify-content: center;
 }
 .nav .cate1 {
     position: absolute;
-    left: 400px;
+    left: 700px;
 }
 .nav .cate2 {
     position: absolute;
-    left: 600px;
+    left: 900px;
 }
 .nav .cate3 {
     position: absolute;
-    left: 800px;
+    left: 1100px;
 }
 .primary{
     position: absolute;
@@ -31,28 +33,60 @@ h3{
     width: 100%;
     height: 75px;
     position: absolute;
+    display: flex;
+    justify-content: space-between;
     top: 410px;   
 }
 .search .sub {
     padding-left: 140px;
 }
-.search .search-nav{
-    position: relative;
-    float: right;
-    padding-right: 200px;
-    top: -50px;
-    width: 100px;
+.search .search-bar{
+    padding-top: 20px;
 }
-.search .search-btn{
-    position: relative;
-    float: right;
-    padding-right: 100px;
-    top: -50px;
-    width: 115px;
-}
+
 hr{
     color: aqua;
     position: relative;
     top: 380px;
     width: 100%;
+}
+.content{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 550px;
+}
+.content img{
+    width: 500px;
+    height: 500px;
+    border-radius: 3px;
+}
+.content .item-1{
+    position: absolute;
+    left: 100px;
+}
+.content .item-2{
+    position: absolute;
+    left: 675px;
+}
+.content .item-3{
+    position: absolute;
+    right: 100px;
+}
+.opacity{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 5px;
+}
+.center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,95%);
+    color: white;
 }
