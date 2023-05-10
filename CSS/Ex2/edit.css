@@ -39,30 +39,38 @@ body{
 }
 #side-bar{
     position: absolute;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: flex-start; */
     width: 200px;
     height: 955px;
     top: 0px;
     left: 120px;
-    background: rgb(212, 211, 211);
+    background: rgb(241, 239, 239);
 }
 #nav-bar{
     display: block;
     list-style: none;
-    text-decoration-line: none;
+    margin-left: 15px;
 }
 #nav-bar li {
     position: relative;
+    padding-top: 35px;
 }
 #nav-bar > li > a{
+    text-decoration: none;
     color: black;
 }
 #nav-bar li a{
     line-height: 50px;
     padding: 0 24px;
     display: block;
+}
+#nav-bar li:first-child{
+    margin-left: -20px;
+}
+#nav-bar li a img{
+    position: absolute;
+    display: block;
+    margin-left: -50px;
+    top: 44px;
 }
 .line{
     position: absolute;
@@ -71,4 +79,56 @@ body{
     top: 0px;
     left: 320px;
     background-color: black;
+}
+.container{
+    position: absolute;
+    width: 700px;
+    height: 954px;
+    left: 321px;
+    background: rgb(241, 239, 239);
+}
+.container .title {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+.form{
+    position: absolute;
+    width: 615px;
+    height: 500px;
+    left: 40px;
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+}
+.name .item:last-child{
+    position: absolute;
+    left: 240px;
+}
+input {
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+select{
+    width: 170px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+button{
+    width: 170px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid ;
+    cursor: pointer;
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+}
+.btn button:last-child{
+    position: absolute;
+    left: 250px;
 }
