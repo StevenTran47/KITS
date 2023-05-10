@@ -1,0 +1,47 @@
+.content{
+    position: relative;
+}
+/* img{
+    position: absolute;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    transition-duration: 1s;
+    transform-origin: bottom left;
+    
+}
+div.content:hover img.pic1{
+transform: rotate(-20deg);
+}
+div.content:hover img.pic2{
+transform: rotate(0deg);
+}
+div.content:hover img.pic3{
+transform: rotate(20deg);
+} */
+/* @keyframes fadeIn{
+    0%
+{
+    width: 0;
+}100%{width: 500px;
+}
+}
+img{
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+} */
+.circle{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: orange;
+    animation-name: flip_animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite
+}
+@keyframes flip_animation {
+  from {transform: rotateY(0deg);}
+  to {transform: rotateY(360deg);}
+}
