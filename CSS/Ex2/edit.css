@@ -13,7 +13,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 15%;
+    width: 9%;
     height: 100vh;
     left: 0px;
     top: 0px;
@@ -39,7 +39,7 @@ body{
 }
 #side-bar{
     position: absolute;
-    width: 20%;
+    width: 10%;
     height: 100vh;
     top: 0px;
     left: 132px;
@@ -77,14 +77,14 @@ body{
     width: 1px;
     height: 100vh;
     top: 0px;
-    left: 324px;
+    left: 370px;
     background-color: black;
 }
 .container{
     position: absolute;
     width: 88%;
     height: 100vh;
-    left: 325px;
+    left: 372px;
     background: rgb(241, 239, 239);
 }
 .container .title {
@@ -108,6 +108,7 @@ body{
     left: 240px;
 }
 input {
+    width: 220px;
     height: 30px;
     border-radius: 3px;
     border: 1px solid black;
@@ -133,12 +134,27 @@ button{
     position: absolute;
     left: 250px;
 }
-@media (max-width: 984px){
+@media (max-width: 1000px){
     .nav{
         width: 25%;
     }
     .container{
         left: 121px;
     }
+    #side-bar{
+        width: 238px;
+    }
 
 }
+@media (min-width: 1000px){
+    
+    #side-bar{
+        width: 238px;
+    }
+
+}
+/* @media (max-width: 1800px){
+    .container{
+        left: 156px;
+    }
+} */

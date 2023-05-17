@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="content">
-        <div class="nav">
+        <div class="nav" id="nav">
             <div class="icon">
                 <img src="/CSS/Ex2/img/logo.png" alt="logo">
             </div>
@@ -36,13 +36,13 @@
                     <img src="/CSS/Ex2/img/setting.png" alt="setting">
                 </div>
             </div>
-            <!-- <div class="line">
+            <div class="line">
                 <img src="/CSS/Ex2/img/Line.png" alt="Line">
-            </div> -->
+            </div>
         </div>
-        <div id="side-bar">
+        <div id="side-bar" >
             <ul id="nav-bar">
-                <li><a href="#"><img src="/CSS/Ex2/img/arrow.png" alt="arrow">Setting</a></li>
+                <li><a href="#" onclick="toggleMenu()"><img src="/CSS/Ex2/img/arrow.png" alt="arrow">Setting</a></li>
                 <li><a href="#"><img src="/CSS/Ex2/img/edit.png" alt="edit">Edit profile</a></li>
                 <li><a href="#"><img src="/CSS/Ex2/img/noti-2.png" alt="noti">Notification</a></li>
                 <li><a href="#"><img src="/CSS/Ex2/img/lock.png" alt="lock">Security</a></li>
@@ -50,7 +50,7 @@
                 <li><a href="#"><img src="/CSS/Ex2/img/help.png" alt="help">Help</a></li>
             </ul>
         </div>
-        <div class="container">
+        <div class="container" id="container">
             <div class="title">
                 <div class="item">
                     <h1>Edit profile</h1>
@@ -59,24 +59,24 @@
                     <img src="/CSS/Ex2/img/logo.png" alt="logo">
                 </div>
             </div>
-            <div class="form">
+            <form id="form" class="form">
                 <div class="name">
                     <div class="item">
                         <h3>First Name</h3>
-                        <input type="text" name="name" id="" placeholder="Luan">
+                        <input type="text" name="name"  placeholder="Luan">
                     </div>
                     <div class="item">
                         <h3>Last Name</h3>
-                        <input type="text" name="last name" id="" placeholder="Vuong">
+                        <input type="text" name="last name"  placeholder="Vuong">
                     </div>
                 </div>
                 <div class="">
                     <h3>Email</h3>
-                    <input type="text" name="email" id="" placeholder="example@gmail.com">
+                    <input type="text" name="email"  placeholder="example@gmail.com">
                 </div>
                 <div>
                     <h3>Address</h3>
-                    <input type="text" name="address" id="" placeholder="33062 Zboncak isle">
+                    <input type="text" name="address"  placeholder="33062 Zboncak isle">
                 </div>
                 <div>
                     <h3>Contact Number</h3>
@@ -92,10 +92,11 @@
                 </div>
                 <br>
                 <div class="btn">
-                    <button style="color: #FF7008;">Cancel</button> <button style="background-color: #FF7008; color: white;">Save</button>
+                    <button id="btn" style="color: #FF7008;">Cancel</button> <button style="background-color: #FF7008; color: white;">Save</button>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
+    <script src="/CSS/Ex2/main.js"></script>
 </body>
 </html>
