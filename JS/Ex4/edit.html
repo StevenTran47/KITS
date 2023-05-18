@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="edit.css">
+    <title>Profile</title>
+</head>
+<body>
+    <div class="content">
+        <div class="nav" id="nav">
+            <div class="icon">
+                <img src="/JS/Ex4/img/logo copy.png" alt="logo">
+            </div>
+            <div class="icon">
+                <img src="/JS/EX4/img/home.png" alt="home">
+            </div>
+            <div class="icon">
+                <img src="/JS/EX4/img/noti.png" alt="noti">
+            </div>
+            <div class="icon">
+                <img src="/JS/EX4/img/date.png" alt="date">
+            </div>
+            <div class="icon">
+                <img src="/JS/EX4/img/chart.png" alt="chart">
+            </div>
+            <div class="icon">
+                <img src="/JS/EX4/img/profile.png" alt="profile">
+            </div>
+            <div class="setting">
+                <div class=" Ellipse">
+                    <img src="/JS/EX4/img/Ellipse 1.png" alt="Ellipse">
+                </div>
+                <div class="icon-setting">
+                    <img src="/JS/EX4/img/setting.png" alt="setting">
+                </div>
+            </div>
+            <div class="line">
+                <img src="/JS/EX4/img/Line.png" alt="Line">
+            </div>
+        </div>
+        <div id="side-bar" >
+            <ul id="nav-bar">
+                <li><a href="#" onclick="toggleMenu()"><img src="/JS/EX4/img/arrow.png" alt="arrow">Setting</a></li>
+                <li><a href="#"><img src="/JS/EX4/img/edit.png" alt="edit">Edit profile</a></li>
+                <li><a href="#"><img src="/JS/EX4/img/noti-2.png" alt="noti">Notification</a></li>
+                <li><a href="#"><img src="/JS/EX4/img/lock.png" alt="lock">Security</a></li>
+                <li><a href="#"><img src="/JS/EX4/img/setting-2.png" alt="setting">Appearance</a></li>
+                <li><a href="#"><img src="/JS/EX4/img/help.png" alt="help">Help</a></li>
+            </ul>
+        </div>
+        <div class="container" id="container">
+            <div class="title">
+                <div class="item">
+                    <h1>Edit profile</h1>
+                </div>
+                <div class="item">
+                    <img src="/JS/EX4/img/logo.png" alt="logo">
+                </div>
+            </div>
+            <form id="form" class="form">
+                <div class="name">
+                    <div class="item">
+                        <h3>First Name</h3>
+                        <input type="text" name="name"  placeholder="Luan">
+                    </div>
+                    <div class="item">
+                        <h3>Last Name</h3>
+                        <input type="text" name="last name"  placeholder="Vuong">
+                    </div>
+                </div>
+                <div class="">
+                    <h3>Email</h3>
+                    <input type="text" name="email"  placeholder="example@gmail.com">
+                </div>
+                <div>
+                    <h3>Address</h3>
+                    <input type="text" name="address"  placeholder="33062 Zboncak isle">
+                </div>
+                <div>
+                    <h3>Contact Number</h3>
+                    <input type="text" name="Contact" placeholder="58277.79">
+                </div>
+                <div>
+                    <h3>City</h3>
+                        <select>
+                            <option value="0">Select</option>
+                            <option value="1">HCM</option>
+                            <option value="2">US</option>
+                        </select>
+                </div>
+                <br>
+                <div class="btn">
+                    <button id="btn" style="color: #FF7008;">Cancel</button> <button style="background-color: #FF7008; color: white;">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/JS/EX4/main.js"></script>
+</body>
+</html>
