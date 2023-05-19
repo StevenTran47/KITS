@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body onload="fetchData()">
+    <div class="wrap">
+        <div class="nav-bar">
+            <div class="item-nav">
+                <a href="#">BlackDesertShop</a>
+            </div>
+            <div class="item-nav">
+                <div class="category">
+                    <div class="cate-item"><a href="#">Sales</a></div>
+                    <div class="cate-item"><a href="#">Products</a></div>
+                    <div class="cate-item"><a href="#">About</a></div>
+                    <div class="dropdown">
+                        <div class="sub-nav"><a href="#">More</a></div>
+                        <div class="dropdown-content">
+                            <a href="#">
+                                <p >First link</p>
+                                <span class="material-symbols-outlined">chevron_right</span>
+                              </a>
+                              <a href="#">
+                                <p>Second link</p>
+                                <span class="material-symbols-outlined">chevron_right</span>  
+                              </a>
+                              <a href="#">
+                                <p>Third link</p>
+                                <span class="material-symbols-outlined">chevron_right</span>  
+                              </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-nav">
+                <div class="right-bar">
+                    <input type="text" placeholder="search">
+                    <div class="cart">
+                        <span>0</span>
+                        <img src="/JS/Ex5/img/shopping-bag (1) 1.png" alt="">
+                    </div>
+                    <div class="profile"><img src="/JS/Ex5/img/user 1.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="title">
+                <p>Home</p><p>Sales</p><p>Hoodies</p>
+            </div>
+            <div id="products" class="products" onload="fetchData()">
+
+            </div>
+        </div>
+    </div>
+    <script src="/JS/Ex5/fetch.js"></script>
+</body>
+</html>
