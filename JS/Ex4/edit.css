@@ -146,6 +146,29 @@ button{
     }
 
 }
+.sign-out-wrapper {
+    display: none;
+    margin-right: 1em;
+  }
+  
+  .sign-out {
+    color: black;
+    outline: none;
+    text-decoration: none;
+    transition: all 0.1s;
+  }
+  
+  .sign-out:focus,
+  .sign-out:hover,
+  .sign-out:active {
+    color: black;
+    background-color: grey;
+    text-decoration: none;
+  }
+  
+  .sign-out > span {
+    margin: 0.1em;
+  }
 @media (min-width: 1000px){
     
     #side-bar{

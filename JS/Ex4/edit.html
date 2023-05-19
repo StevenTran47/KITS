@@ -10,8 +10,8 @@
 <body>
     <div class="content">
         <div class="nav" id="nav">
-            <div class="icon">
-                <img src="/JS/Ex4/img/logo copy.png" alt="logo">
+            <div class="icon" onclick="logOutPage()">
+                <img src="/JS/Ex4/img/logo.png" alt="logo">
             </div>
             <div class="icon">
                 <img src="/JS/EX4/img/home.png" alt="home">
@@ -55,9 +55,14 @@
                 <div class="item">
                     <h1>Edit profile</h1>
                 </div>
-                <div class="item">
+                <div class="item" style="padding-right: 30em;" onclick="showLogOut()">
                     <img src="/JS/EX4/img/logo.png" alt="logo">
-                </div>
+                    <div class="sign-out-wrapper clearfix" id="sign-out" onclick="logOutPage()">
+                        <a href="#" class="sign-out pull-right">
+                            <span>Sign Out</span>
+                         </a>
+                    </div>
+            </div>
             </div>
             <form id="form" class="form">
                 <div class="name">
