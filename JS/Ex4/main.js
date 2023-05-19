@@ -1,28 +1,28 @@
-const login = () => {
-  const userName = document.getElementById("userName");
-  const password = document.getElementById("password");
+function login ()  {
+  const userName = document.getElementById("userName").value;
+  const password = document.getElementById("password").value;
 
   fetch('https://dummyjson.com/auth/login', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       
-      username: 'minchellek',
-      password: '0lelplR',
+      username: userName,
+      password: password,
       // expiresInMins: 60, // optional
     })
   })
   .then(res => res.json())
   .then(data => {
-    const token = token.data;
+    const token = data.token;
     if (token) {
       alert("dang nhap thanh cong")
-      sessionStorage.setItem("login",token);
+      localStorage.setItem("login",token);
       window.location.assign("edit.html");
     }
     else {
       alert("dang nhap that bai")
-      window.location.assign("home.html")
+      window.location.assign("loginPage.html")
     }
   });
 }
@@ -31,10 +31,10 @@ const showLogOut = () => {
   toggle.style.display = "block"
 }
 
-const loginPage = () =>{
-  window.location.assign("edit.html")
-}
 const logOutPage = () => {
-  window.location.assign("loginPage.html")
+  window.location.assign("loginPage.html");
 }
 
+const save = () =>{
+
+}
